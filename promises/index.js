@@ -13,3 +13,14 @@ const readFile = (filePath, charset) => new Promise((resolve, reject) => {
 readFile(path.join(__dirname, '.', 'package.json'), 'utf8',)
     .then((result) => console.log(result))
     .catch((error) => console.log('ERROR: ', error))
+
+const read = async () => {
+    try {
+        const result = await readFile(path.join(__dirname, '.', 'package.json'), 'utf8')
+        console.log(result)
+    } catch(error) {
+        console.log('Error: ', error)
+    }
+}
+
+read()
