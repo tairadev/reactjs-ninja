@@ -6,7 +6,7 @@ import UserInfo from './user-info';
 import Actions from './actions';
 import Header from './header';
 import Repos from './repos';
-import Loader from './loader'
+import Loader from './loader';
 
 const AppContent = ({ userinfo, getRepos, getStarred, repos, starred, isFetching, handleSearch }) => {
 
